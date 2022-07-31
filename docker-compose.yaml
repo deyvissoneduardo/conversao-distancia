@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: deyvissonarouche/convert-distance
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - 8080:8080
